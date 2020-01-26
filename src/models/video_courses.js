@@ -19,10 +19,11 @@ const VideoCourseSchema = new mongoose.Schema({
                 type: String,
                 required: true
             },
-            videoSource: {
-                type: String,
-                required: true
-            },
+            videoSources: [
+                {
+                    type: Object
+                }
+            ],
             exercises: [
                 {
                     exerciseCode: {

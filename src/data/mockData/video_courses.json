@@ -1,7 +1,7 @@
 [
     {
         "name": "Obiekty JS",
-        "description": "",
+        "description": "abc",
         "price": 34.99,
         "sections": [
             {
@@ -111,28 +111,18 @@
                     },
                     {
                         "exerciseCode": "Ćwiczenie 7",
-                        "description": "Do strony dodaj przycisk “Dodaj” oraz 2 inputy.",
+                        "description": "Do strony dodaj przycisk “Dodaj” oraz 2 inputy.\n <ul><li>Input type text na wpisywanie imienia</li><li>Input type text na wpisywanie nazwiska</li><li>Po kliknięciu przycisku “Dodaj” tworzony jest obiekt użytkownika z właściwościami firstname oraz lastname</li><li>Wartość właściwości firstname jest wartością pobieraną z pierwszego inputa w momencie kliknięcia przycisku</li><li>Wartość właściwości lastname jest wartością pobieraną z drugiego inputa w momencie kliknięcia przycisku</li></ul>",
                         "orderNumber": 7
                     },
                     {
                         "exerciseCode": "Ćwiczenie 8",
-                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n 'Pojazd jest ciągnikiem siodłowym, który może przenieść ładunek o wadze maksymalnie do 20 ton, wymiary ładowni to 14 metrów długości, 2.65 metra wysokości oraz 2.5 metra szerokości'.",
+                        "description": "Do strony dodaj przycisk “Dodaj” oraz 3 inputy.\n <ul><li>Input type text na wpisywanie ID</li><li>Input type number na wpisywanie ciężaru ładunku (kilogramy)</li><li>Input type text na wpisywanie statusu przesyłki</li><li>Po kliknięciu przycisku “Dodaj” tworzony jest obiekt package z właściwościami id, weight, status</li><li>Wartość właściwość id jest wartością pobieraną z pierwszego inputa w momencie kliknięcia przycisku</li><li>Wartość właściwości weight jest wartością pobieraną z drugiego inputa w momencie kliknięcia przycisku</li><li>Wartość właściwości status jest wartością pobieraną z trzeciego inputa w momencie kliknięcia przycisku</li></ul>",
                         "orderNumber": 8
                     },
                     {
                         "exerciseCode": "Ćwiczenie 9",
-                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n               'Na autostradzie są 4 punkty poboru opłat, znajdują się one w: Namysłowie, Mistrzejowicach, Krakowie, Poznaniu. W Namysłowie opłata którą pobiera się od kierowcy to 2.5 PLN, w Mistrzejowicach to 6 PLN, w Krakowie to 6.5 PLN, w Poznaniu to 9.8 PLN'.",
+                        "description": "Do strony dodaj przycisk “Dodaj” oraz 3 inputy: <ul><li>Input type text na wpisywanie ID</li><li>Input type number na wpisywanie ciężaru samochodu (kilogramy)</li><li>Select na wpisywanie statusu samochodu z opcjami:<ul><li>zarejestrowany</li><li>wyrejestrowany</li><li>niezarejestrowany</li></ul></li><li>Po kliknięciu przycisku “Dodaj” tworzony jest obiekt vehicle z właściwościami id, carWeight, carStatus</li><li>Wartość właściwość id jest wartością pobieraną z pierwszego inputa w momencie kliknięcia przycisku</li><li>Wartość właściwości carWeight jest wartością pobieraną z drugiego inputa w momencie kliknięcia przycisku</li><li>Wartość właściwości carStatus jest wartością pobieraną z aktualnej opcji wybranej przez użytkownika w selecie w momencie kliknięcia przycisku “Dodaj”</li></ul>",
                         "orderNumber": 9
-                    },
-                    {
-                        "exerciseCode": "Ćwiczenie 10",
-                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n                       'Pacjent - Jan Kowalski ma zarezerwowane 2 terminy jeden na godzinę 12:30 w dniu 12.10.2019, drugi na godzinę 14:30 w dniu 15.10.2019. Pierwsza rezerwacja jest dla salonu masażu na ulicy Branieckiej, druga na salon masażu na ulicy Mickiewicza'.",
-                        "orderNumber": 10
-                    },
-                    {
-                        "exerciseCode": "Ćwiczenie 11",
-                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n Cennik warsztatu zawiera takie opcje: \n 1.Mycie szyb - 50zł\n 2.Wymiana opon - 45zł  \n 3.Odkurzanie samochodu - 80zł",
-                        "orderNumber": 11
                     }
                 ]
             },
@@ -147,7 +137,7 @@
                 "exercises": [
                     {
                         "exerciseCode": "Ćwiczenie 1",
-                        "description": "Utwórz obiekt product zawierający następujące właściwości: \n name, weight i price oraz przypisz im wartości: „banany”, „2kg”, 40. Wyświetl w konsoli zawartość właściwości name i weight przy użyciu dwóch typów odwołań.",
+                        "description": "Utwórz obiekt camera zawierający następujące właściwości: brand, memorySize i resolution: \n <ul><li>Przypisz im wartości: „Canon”, 16GB, 20Mpx.</li><li> Następnie utwórz metodę printBrand(), która wyświetli w konsoli właściwość brand obiektu.</li><li>Wywołaj utworzoną metodę.</li></ul>",
                         "orderNumber": 1
                     },
                     {
