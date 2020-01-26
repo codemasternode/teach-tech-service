@@ -1,0 +1,413 @@
+[
+    {
+        "name": "Obiekty JS",
+        "description": "",
+        "price": 34.99,
+        "sections": [
+            {
+                "name": "Tworzenie obiektów",
+                "videoSources": [
+                    {
+                        "name": "Tworzenie obiektów",
+                        "source": "/Objects/1.+Tworzenie+obiekt%C3%B3w/Tworzenie+obiekt%C3%B3w.mp4"
+                    }
+                ],
+                "exercises": [
+                    {
+                        "exerciseCode": "Ćwiczenie 1",
+                        "description": "Utwórz obiekt product zawierający następujące właściwości: \n name, weight i price oraz przypisz im wartości: „banany”, „2kg”, 40. Wyświetl w konsoli zawartość właściwości name i weight przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 1
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 2",
+                        "description": "Utwórz obiekt car zawierający następujące właściwości: \n brand, color, power, year i price oraz przypisz im wartości: „Honda”, „czerwony”, „150”, „2012”, 100000. Wyświetl w konsoli zawartość właściwości brand i year przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 2
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 3",
+                        "description": "Utwórz obiekt user zawierający następujące właściwości:  \n id, name, password, age i permissions oraz przypisz im wartości: „Mariusz”, „trudneHasło”, 19, „odczyt”. Wyświetl w konsoli wszystkie właściwość obiektu user przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 3
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 4",
+                        "description": "Utwórz obiekt player zawierający następujące właściwości:  \n player-nick, level, guild i class oraz przypisz im wartości: „koksu74”, 75, „mistrzowie”, „szaman”. Wyświetl w konsoli właściwość player-nick.",
+                        "orderNumber": 4
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 5",
+                        "description": "Utwórz obiekt userLocation zawierający następujące włąściwości: \n username, location. Username przypisz wartość: “Marcin”. Location ma być obiektem z właściwościami lat, lng z wartościami: 52.123, 44.12. W konsoli wyświetl właściwości lat oraz lng.",
+                        "orderNumber": 5
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 6",
+                        "description": "Utwórz obiekt user2 zawierający następujące właściwości: \n name, surname i childs oraz przypisz im wartości: “Jan”, “Kowalski”, [“Marek”,”Agnieszka”]. Przy użyciu pętli for wyświetl wartości z właściwości childs (tablica). ",
+                        "orderNumber": 6
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 7",
+                        "description": "Utwórz obiekt vehicle zawierający następujące właściwości: \n registerId, brand, model, owner i przypisz im następujące właściwości: “KR 123123”, “mercedes-benz”, “GLE” oraz obiekt (do właściwości owner) z właściwościami: name, surname, age, parents z wartościami: [“Agata”, “Janusz”]. Wyświetl przy użyciu pętli for wartości właściwości parents w obiekcie owner zagnieżdżonym w obiekcie vehicle.",
+                        "orderNumber": 7
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 8",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n 'Pojazd jest ciągnikiem siodłowym, który może przenieść ładunek o wadze maksymalnie do 20 ton, wymiary ładowni to 14 metrów długości, 2.65 metra wysokości oraz 2.5 metra szerokości'.",
+                        "orderNumber": 8
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 9",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n               'Na autostradzie są 4 punkty poboru opłat, znajdują się one w: Namysłowie, Mistrzejowicach, Krakowie, Poznaniu. W Namysłowie opłata którą pobiera się od kierowcy to 2.5 PLN, w Mistrzejowicach to 6 PLN, w Krakowie to 6.5 PLN, w Poznaniu to 9.8 PLN'.",
+                        "orderNumber": 9
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 10",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n                       'Pacjent - Jan Kowalski ma zarezerwowane 2 terminy jeden na godzinę 12:30 w dniu 12.10.2019, drugi na godzinę 14:30 w dniu 15.10.2019. Pierwsza rezerwacja jest dla salonu masażu na ulicy Branieckiej, druga na salon masażu na ulicy Mickiewicza'.",
+                        "orderNumber": 10
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 11",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n Cennik warsztatu zawiera takie opcje: \n 1.Mycie szyb - 50zł\n 2.Wymiana opon - 45zł  \n 3.Odkurzanie samochodu - 80zł",
+                        "orderNumber": 11
+                    }
+                ]
+            },
+            {
+                "name": "Modyfikacja obiektów",
+                "videoSources": [
+                    {
+                        "name": "Modyfikacja obiektów",
+                        "source": "/Objects/2.+Modyfikacja+obiekt%C3%B3w/Modyfikacja+obiekt%C3%B3w.mp4"
+                    }
+                ],
+                "exercises": [
+                    {
+                        "exerciseCode": "Ćwiczenie 1",
+                        "description": "Utwórz obiekt package  zawierający następujące właściwości: id, weight, sender (nadawca), recipient(odbiorca) i status. <ul><li>Przypisz im wartości: „kd367892345”, „5kg”, „Adam Małysz”, „Kamil Stoch”, „w realizacji”</li><li>Następnie przypisz właściwości status wartość „wysłano”.</li><li>Wyświetl w konsoli właściwość id i status obiektu package.</li></ul>",
+                        "orderNumber": 1
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 2",
+                        "description": "Utwórz obiekt load zawierający następujące właściwości: id, weight, width, height, length, transport-manager. <ul><li>Przypisz im wartości (podaczas inicjalizacji obiektu): “k12811”, 10, 2, 10, 4, “Super Transport”</li><li>Następnie przypisz właściwości weight wartość 10 oraz właściwości transport-manager wartość “Rohling Trans”</li><li>Wyświetl właściwości: weight oraz transport-manager w konsoli.</li></ul>",
+                        "orderNumber": 2
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 3",
+                        "description": "Utwórz obiekt flight zawierający następujące właściwości: id, from, destination, numberOfPassangers. <ul><li>właściwość id zawiera wartość “k12yuid”</li><li>właściwość from to obiekt posiadający właściwości lat, lng, portName; przypisz im wartości: 12.892, 48.901, “Berlin”</li><li>właściwość destination to obiekt posiadający właściwości lat, lng, portName; przypisz im wartości: 15.892, 30.901, “Warszawa”</li><li>właściwość numberOfPassangers zawiera wartość 128</li><li>następnie do właściwości destination właściwości lat przypisz 15.989</li><li>następnie do właściwości destination właściwości lng przypisz 17.12322</li><li>w konsoli wyświetl właściwości from oraz to</li></ul>",
+                        "orderNumber": 3
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 4",
+                        "description": "Utwórz obiekt user zawierający następujące właściwości: firstname, lastname. <ul><li>właściwość firstname zawiera wartość “Jan”</li><li>właściwość lastname zawiera wartość “Kowalski”</li><li>następnie dodaj do obiektu właściwość age - nie dopisuj właściwości w inicjalizacji obiektu</li><li>wyświetl w konsoli właściwość age</li></ul>",
+                        "orderNumber": 4
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 5",
+                        "description": "Utwórz obiekt carrier zawierający następujące właściwości: id, capacity, dimensions.<ul><li>właściwość id zawiera wartość “1”</li><li>właściwość capacity zawiera wartość 22</li><li>właściwość dimensions to obiekt z właściwościami: <ul><li>width z wartością 2.25</li><li>height z wartością 2.35</li><li>length z wartością 13.5</li></ul></li><li>dokonaj modyfikacji właściwości length we właściwości dimensions na wartość 2.3</li><li>do obiektu dodaj właściwość o nazwie dmc z wartością 40</li></ul>",
+                        "orderNumber": 5
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 6",
+                        "description": "Do obiektu carrier z poprzedniego ćwiczenia dodaj logikę tak by: \n <ul><li>właściwość width z właściwości dimensions była modyfikowana przez input type number tzn. za każdym razem jak zmienia się wartość inputa to właściwość width jest modyfikowana na wartość z inputa.</li><li>właściwość height z właściwości dimensions była modyfikowana przez input type number tzn. za każdym razem jak zmienia się wartość inputa to właściwość height jest modyfikowana na wartość z inputa.</li><li>właściwość length z właściwości dimensions była modyfikowana przez input type number tzn. za każdym razem jak zmienia się wartość inputa to właściwość length jest modyfikowana na wartość z inputa.</li></ul>",
+                        "orderNumber": 6
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 7",
+                        "description": "Do strony dodaj przycisk “Dodaj” oraz 2 inputy.",
+                        "orderNumber": 7
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 8",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n 'Pojazd jest ciągnikiem siodłowym, który może przenieść ładunek o wadze maksymalnie do 20 ton, wymiary ładowni to 14 metrów długości, 2.65 metra wysokości oraz 2.5 metra szerokości'.",
+                        "orderNumber": 8
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 9",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n               'Na autostradzie są 4 punkty poboru opłat, znajdują się one w: Namysłowie, Mistrzejowicach, Krakowie, Poznaniu. W Namysłowie opłata którą pobiera się od kierowcy to 2.5 PLN, w Mistrzejowicach to 6 PLN, w Krakowie to 6.5 PLN, w Poznaniu to 9.8 PLN'.",
+                        "orderNumber": 9
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 10",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n                       'Pacjent - Jan Kowalski ma zarezerwowane 2 terminy jeden na godzinę 12:30 w dniu 12.10.2019, drugi na godzinę 14:30 w dniu 15.10.2019. Pierwsza rezerwacja jest dla salonu masażu na ulicy Branieckiej, druga na salon masażu na ulicy Mickiewicza'.",
+                        "orderNumber": 10
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 11",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n Cennik warsztatu zawiera takie opcje: \n 1.Mycie szyb - 50zł\n 2.Wymiana opon - 45zł  \n 3.Odkurzanie samochodu - 80zł",
+                        "orderNumber": 11
+                    }
+                ]
+            },
+            {
+                "name": "Metody w obiektach",
+                "videoSources": [
+                    {
+                        "name": "Metody w obiektach",
+                        "source": "/Objects/Metody+w+obiektach.mp4"
+                    }
+                ],
+                "exercises": [
+                    {
+                        "exerciseCode": "Ćwiczenie 1",
+                        "description": "Utwórz obiekt product zawierający następujące właściwości: \n name, weight i price oraz przypisz im wartości: „banany”, „2kg”, 40. Wyświetl w konsoli zawartość właściwości name i weight przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 1
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 2",
+                        "description": "Utwórz obiekt car zawierający następujące właściwości: \n brand, color, power, year i price oraz przypisz im wartości: „Honda”, „czerwony”, „150”, „2012”, 100000. Wyświetl w konsoli zawartość właściwości brand i year przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 2
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 3",
+                        "description": "Utwórz obiekt user zawierający następujące właściwości:  \n id, name, password, age i permissions oraz przypisz im wartości: „Mariusz”, „trudneHasło”, 19, „odczyt”. Wyświetl w konsoli wszystkie właściwość obiektu user przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 3
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 4",
+                        "description": "Utwórz obiekt player zawierający następujące właściwości:  \n player-nick, level, guild i class oraz przypisz im wartości: „koksu74”, 75, „mistrzowie”, „szaman”. Wyświetl w konsoli właściwość player-nick.",
+                        "orderNumber": 4
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 5",
+                        "description": "Utwórz obiekt userLocation zawierający następujące włąściwości: \n username, location. Username przypisz wartość: “Marcin”. Location ma być obiektem z właściwościami lat, lng z wartościami: 52.123, 44.12. W konsoli wyświetl właściwości lat oraz lng.",
+                        "orderNumber": 5
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 6",
+                        "description": "Utwórz obiekt user2 zawierający następujące właściwości: \n name, surname i childs oraz przypisz im wartości: “Jan”, “Kowalski”, [“Marek”,”Agnieszka”]. Przy użyciu pętli for wyświetl wartości z właściwości childs (tablica). ",
+                        "orderNumber": 6
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 7",
+                        "description": "Utwórz obiekt vehicle zawierający następujące właściwości: \n registerId, brand, model, owner i przypisz im następujące właściwości: “KR 123123”, “mercedes-benz”, “GLE” oraz obiekt (do właściwości owner) z właściwościami: name, surname, age, parents z wartościami: [“Agata”, “Janusz”]. Wyświetl przy użyciu pętli for wartości właściwości parents w obiekcie owner zagnieżdżonym w obiekcie vehicle.",
+                        "orderNumber": 7
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 8",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n 'Pojazd jest ciągnikiem siodłowym, który może przenieść ładunek o wadze maksymalnie do 20 ton, wymiary ładowni to 14 metrów długości, 2.65 metra wysokości oraz 2.5 metra szerokości'.",
+                        "orderNumber": 8
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 9",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n               'Na autostradzie są 4 punkty poboru opłat, znajdują się one w: Namysłowie, Mistrzejowicach, Krakowie, Poznaniu. W Namysłowie opłata którą pobiera się od kierowcy to 2.5 PLN, w Mistrzejowicach to 6 PLN, w Krakowie to 6.5 PLN, w Poznaniu to 9.8 PLN'.",
+                        "orderNumber": 9
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 10",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n                       'Pacjent - Jan Kowalski ma zarezerwowane 2 terminy jeden na godzinę 12:30 w dniu 12.10.2019, drugi na godzinę 14:30 w dniu 15.10.2019. Pierwsza rezerwacja jest dla salonu masażu na ulicy Branieckiej, druga na salon masażu na ulicy Mickiewicza'.",
+                        "orderNumber": 10
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 11",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n Cennik warsztatu zawiera takie opcje: \n 1.Mycie szyb - 50zł\n 2.Wymiana opon - 45zł  \n 3.Odkurzanie samochodu - 80zł",
+                        "orderNumber": 11
+                    }
+                ]
+            },
+            {
+                "name": "Accessors",
+                "videoSources": [
+                    {
+                        "name": "Accessors",
+                        "source": "/Objects/4.+Accessors/Accessors.mp4"
+                    }
+                ],
+                "exercises": [
+                    {
+                        "exerciseCode": "Ćwiczenie 1",
+                        "description": "Utwórz obiekt product zawierający następujące właściwości: \n name, weight i price oraz przypisz im wartości: „banany”, „2kg”, 40. Wyświetl w konsoli zawartość właściwości name i weight przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 1
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 2",
+                        "description": "Utwórz obiekt car zawierający następujące właściwości: \n brand, color, power, year i price oraz przypisz im wartości: „Honda”, „czerwony”, „150”, „2012”, 100000. Wyświetl w konsoli zawartość właściwości brand i year przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 2
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 3",
+                        "description": "Utwórz obiekt user zawierający następujące właściwości:  \n id, name, password, age i permissions oraz przypisz im wartości: „Mariusz”, „trudneHasło”, 19, „odczyt”. Wyświetl w konsoli wszystkie właściwość obiektu user przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 3
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 4",
+                        "description": "Utwórz obiekt player zawierający następujące właściwości:  \n player-nick, level, guild i class oraz przypisz im wartości: „koksu74”, 75, „mistrzowie”, „szaman”. Wyświetl w konsoli właściwość player-nick.",
+                        "orderNumber": 4
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 5",
+                        "description": "Utwórz obiekt userLocation zawierający następujące włąściwości: \n username, location. Username przypisz wartość: “Marcin”. Location ma być obiektem z właściwościami lat, lng z wartościami: 52.123, 44.12. W konsoli wyświetl właściwości lat oraz lng.",
+                        "orderNumber": 5
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 6",
+                        "description": "Utwórz obiekt user2 zawierający następujące właściwości: \n name, surname i childs oraz przypisz im wartości: “Jan”, “Kowalski”, [“Marek”,”Agnieszka”]. Przy użyciu pętli for wyświetl wartości z właściwości childs (tablica). ",
+                        "orderNumber": 6
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 7",
+                        "description": "Utwórz obiekt vehicle zawierający następujące właściwości: \n registerId, brand, model, owner i przypisz im następujące właściwości: “KR 123123”, “mercedes-benz”, “GLE” oraz obiekt (do właściwości owner) z właściwościami: name, surname, age, parents z wartościami: [“Agata”, “Janusz”]. Wyświetl przy użyciu pętli for wartości właściwości parents w obiekcie owner zagnieżdżonym w obiekcie vehicle.",
+                        "orderNumber": 7
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 8",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n 'Pojazd jest ciągnikiem siodłowym, który może przenieść ładunek o wadze maksymalnie do 20 ton, wymiary ładowni to 14 metrów długości, 2.65 metra wysokości oraz 2.5 metra szerokości'.",
+                        "orderNumber": 8
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 9",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n               'Na autostradzie są 4 punkty poboru opłat, znajdują się one w: Namysłowie, Mistrzejowicach, Krakowie, Poznaniu. W Namysłowie opłata którą pobiera się od kierowcy to 2.5 PLN, w Mistrzejowicach to 6 PLN, w Krakowie to 6.5 PLN, w Poznaniu to 9.8 PLN'.",
+                        "orderNumber": 9
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 10",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n                       'Pacjent - Jan Kowalski ma zarezerwowane 2 terminy jeden na godzinę 12:30 w dniu 12.10.2019, drugi na godzinę 14:30 w dniu 15.10.2019. Pierwsza rezerwacja jest dla salonu masażu na ulicy Branieckiej, druga na salon masażu na ulicy Mickiewicza'.",
+                        "orderNumber": 10
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 11",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n Cennik warsztatu zawiera takie opcje: \n 1.Mycie szyb - 50zł\n 2.Wymiana opon - 45zł  \n 3.Odkurzanie samochodu - 80zł",
+                        "orderNumber": 11
+                    }
+                ]
+            },
+            {
+                "name": "Tablica obiektów",
+                "videoSources": [
+                    {
+                        "name": "Tablica obiektów",
+                        "source": "/Objects/1.+Tworzenie+obiekt%C3%B3w/Tworzenie+obiekt%C3%B3w.mp4"
+                    },
+                    {
+                        "name": "Tablica obiektów - praktyka",
+                        "source": "/Objects/5.+Tablica+obiekt%C3%B3w/2.+Tablica+obiekt%C3%B3w+-+praktyka.mp4"
+                    }
+                ],
+                "exercises": [
+                    {
+                        "exerciseCode": "Ćwiczenie 1",
+                        "description": "Utwórz obiekt product zawierający następujące właściwości: \n name, weight i price oraz przypisz im wartości: „banany”, „2kg”, 40. Wyświetl w konsoli zawartość właściwości name i weight przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 1
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 2",
+                        "description": "Utwórz obiekt car zawierający następujące właściwości: \n brand, color, power, year i price oraz przypisz im wartości: „Honda”, „czerwony”, „150”, „2012”, 100000. Wyświetl w konsoli zawartość właściwości brand i year przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 2
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 3",
+                        "description": "Utwórz obiekt user zawierający następujące właściwości:  \n id, name, password, age i permissions oraz przypisz im wartości: „Mariusz”, „trudneHasło”, 19, „odczyt”. Wyświetl w konsoli wszystkie właściwość obiektu user przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 3
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 4",
+                        "description": "Utwórz obiekt player zawierający następujące właściwości:  \n player-nick, level, guild i class oraz przypisz im wartości: „koksu74”, 75, „mistrzowie”, „szaman”. Wyświetl w konsoli właściwość player-nick.",
+                        "orderNumber": 4
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 5",
+                        "description": "Utwórz obiekt userLocation zawierający następujące włąściwości: \n username, location. Username przypisz wartość: “Marcin”. Location ma być obiektem z właściwościami lat, lng z wartościami: 52.123, 44.12. W konsoli wyświetl właściwości lat oraz lng.",
+                        "orderNumber": 5
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 6",
+                        "description": "Utwórz obiekt user2 zawierający następujące właściwości: \n name, surname i childs oraz przypisz im wartości: “Jan”, “Kowalski”, [“Marek”,”Agnieszka”]. Przy użyciu pętli for wyświetl wartości z właściwości childs (tablica). ",
+                        "orderNumber": 6
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 7",
+                        "description": "Utwórz obiekt vehicle zawierający następujące właściwości: \n registerId, brand, model, owner i przypisz im następujące właściwości: “KR 123123”, “mercedes-benz”, “GLE” oraz obiekt (do właściwości owner) z właściwościami: name, surname, age, parents z wartościami: [“Agata”, “Janusz”]. Wyświetl przy użyciu pętli for wartości właściwości parents w obiekcie owner zagnieżdżonym w obiekcie vehicle.",
+                        "orderNumber": 7
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 8",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n 'Pojazd jest ciągnikiem siodłowym, który może przenieść ładunek o wadze maksymalnie do 20 ton, wymiary ładowni to 14 metrów długości, 2.65 metra wysokości oraz 2.5 metra szerokości'.",
+                        "orderNumber": 8
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 9",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n               'Na autostradzie są 4 punkty poboru opłat, znajdują się one w: Namysłowie, Mistrzejowicach, Krakowie, Poznaniu. W Namysłowie opłata którą pobiera się od kierowcy to 2.5 PLN, w Mistrzejowicach to 6 PLN, w Krakowie to 6.5 PLN, w Poznaniu to 9.8 PLN'.",
+                        "orderNumber": 9
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 10",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n                       'Pacjent - Jan Kowalski ma zarezerwowane 2 terminy jeden na godzinę 12:30 w dniu 12.10.2019, drugi na godzinę 14:30 w dniu 15.10.2019. Pierwsza rezerwacja jest dla salonu masażu na ulicy Branieckiej, druga na salon masażu na ulicy Mickiewicza'.",
+                        "orderNumber": 10
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 11",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n Cennik warsztatu zawiera takie opcje: \n 1.Mycie szyb - 50zł\n 2.Wymiana opon - 45zł  \n 3.Odkurzanie samochodu - 80zł",
+                        "orderNumber": 11
+                    }
+                ]
+            },
+            {
+                "name": "Klasy",
+                "videoSources": [
+                    {
+                        "name": "Klasy",
+                        "source": "/Objects/6.+Klasy/Klasy.mp4"
+                    },
+                    {
+                        "name": "Klasy - praktyka",
+                        "source": "/Objects/7.+Klasy+-+praktyka/Klasa+-+praktyka.mp4"
+                    }
+                ],
+                "exercises": [
+                    {
+                        "exerciseCode": "Ćwiczenie 1",
+                        "description": "Utwórz obiekt product zawierający następujące właściwości: \n name, weight i price oraz przypisz im wartości: „banany”, „2kg”, 40. Wyświetl w konsoli zawartość właściwości name i weight przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 1
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 2",
+                        "description": "Utwórz obiekt car zawierający następujące właściwości: \n brand, color, power, year i price oraz przypisz im wartości: „Honda”, „czerwony”, „150”, „2012”, 100000. Wyświetl w konsoli zawartość właściwości brand i year przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 2
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 3",
+                        "description": "Utwórz obiekt user zawierający następujące właściwości:  \n id, name, password, age i permissions oraz przypisz im wartości: „Mariusz”, „trudneHasło”, 19, „odczyt”. Wyświetl w konsoli wszystkie właściwość obiektu user przy użyciu dwóch typów odwołań.",
+                        "orderNumber": 3
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 4",
+                        "description": "Utwórz obiekt player zawierający następujące właściwości:  \n player-nick, level, guild i class oraz przypisz im wartości: „koksu74”, 75, „mistrzowie”, „szaman”. Wyświetl w konsoli właściwość player-nick.",
+                        "orderNumber": 4
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 5",
+                        "description": "Utwórz obiekt userLocation zawierający następujące włąściwości: \n username, location. Username przypisz wartość: “Marcin”. Location ma być obiektem z właściwościami lat, lng z wartościami: 52.123, 44.12. W konsoli wyświetl właściwości lat oraz lng.",
+                        "orderNumber": 5
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 6",
+                        "description": "Utwórz obiekt user2 zawierający następujące właściwości: \n name, surname i childs oraz przypisz im wartości: “Jan”, “Kowalski”, [“Marek”,”Agnieszka”]. Przy użyciu pętli for wyświetl wartości z właściwości childs (tablica). ",
+                        "orderNumber": 6
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 7",
+                        "description": "Utwórz obiekt vehicle zawierający następujące właściwości: \n registerId, brand, model, owner i przypisz im następujące właściwości: “KR 123123”, “mercedes-benz”, “GLE” oraz obiekt (do właściwości owner) z właściwościami: name, surname, age, parents z wartościami: [“Agata”, “Janusz”]. Wyświetl przy użyciu pętli for wartości właściwości parents w obiekcie owner zagnieżdżonym w obiekcie vehicle.",
+                        "orderNumber": 7
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 8",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n 'Pojazd jest ciągnikiem siodłowym, który może przenieść ładunek o wadze maksymalnie do 20 ton, wymiary ładowni to 14 metrów długości, 2.65 metra wysokości oraz 2.5 metra szerokości'.",
+                        "orderNumber": 8
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 9",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n               'Na autostradzie są 4 punkty poboru opłat, znajdują się one w: Namysłowie, Mistrzejowicach, Krakowie, Poznaniu. W Namysłowie opłata którą pobiera się od kierowcy to 2.5 PLN, w Mistrzejowicach to 6 PLN, w Krakowie to 6.5 PLN, w Poznaniu to 9.8 PLN'.",
+                        "orderNumber": 9
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 10",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu:  \n                       'Pacjent - Jan Kowalski ma zarezerwowane 2 terminy jeden na godzinę 12:30 w dniu 12.10.2019, drugi na godzinę 14:30 w dniu 15.10.2019. Pierwsza rezerwacja jest dla salonu masażu na ulicy Branieckiej, druga na salon masażu na ulicy Mickiewicza'.",
+                        "orderNumber": 10
+                    },
+                    {
+                        "exerciseCode": "Ćwiczenie 11",
+                        "description": "Utwórz obiekt, który nadawałby się do przykładu: \n Cennik warsztatu zawiera takie opcje: \n 1.Mycie szyb - 50zł\n 2.Wymiana opon - 45zł  \n 3.Odkurzanie samochodu - 80zł",
+                        "orderNumber": 11
+                    }
+                ]
+            }
+        ]
+    }
+]

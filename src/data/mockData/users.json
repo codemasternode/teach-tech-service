@@ -1,0 +1,18 @@
+[
+    {
+        "firstname": "Marcin",
+        "lastname": "Warzybok",
+        "email": "marcinwarzybok@outlook.com",
+        "password": "Marcinek123",
+        "phone": "+48608624531",
+        "country": "Polska",
+        "dataToInvoice": {
+            "firstname": "Marcin",
+            "lastname": "Warzybok",
+            "postalCode": "30-856",
+            "country": "Polska",
+            "street": "ul. Bieżanowska 258B"
+        },
+        "isConfirmed": true
+    }
+]
