@@ -52,7 +52,7 @@ export async function getCourseSectionByNumber(req, res) {
             msg: "Course doesn't exist"
         })
     }
-    console.log(course, req.params.sectionName)
+    
     let section = null
     for (let i = 0; i < course.sections.length; i++) {
         if (course.sections[i].name === req.params.sectionName) {
@@ -67,13 +67,15 @@ export async function getCourseSectionByNumber(req, res) {
     }
     const promises = []
     for(let k = 0; k < section.videoSources.length; k++) {
-        promises.push(getSignedURL(section.videoSources[k].name))
+        promises.push(getSignedURL(section.videoSources[k].source))
     }
+    
     Promise.all(promises).then(signedUrls => {
-        console.log(signedUrls)
+       
         for(let i = 0; i < signedUrls.length; i++) {
             section.videoSources[i].source = signedUrls[i]
         }
+
         res.send({ section })
     })
     
