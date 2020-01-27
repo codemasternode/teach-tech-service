@@ -31,11 +31,10 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  videoCourses: [
-    {
-      type: Object
-    }
-  ],
+  videoCourses: {
+    type: Array,
+    default: []
+  },
   dataToInvoice: {
     firstname: {
       type: String,

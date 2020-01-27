@@ -1,4 +1,5 @@
 import User from '../models/users'
+import VideoCourse from '../models/video_courses'
 import uuid from 'uuid/v1'
 import { loadTemplate, sendEmail } from "../config/mailer";
 
@@ -102,10 +103,37 @@ export async function confirmUser(req, res) {
     })
 }
 
-export async function getMyCourses(req,res) {
+export async function getMyCourses(req, res) {
+
+    const user = await User.findOne({
+        email: req.user.email
+    })
+
+    if (!user) {
+        return res.status(401).send({
+            msg: "User doesn't exist"
+        })
+    }
+
+    res.send({
+        courses: user.videoCourses
+    })
 
 }
 
-export async function getProfile(req,res) {
+export async function getProfile(req, res) {
+    const user = await User.findOne({
+        email: req.user.email
+    }, {
+            password: 0
+        })
 
+    if (!user) {
+        return res.status(401).send({
+            msg: "User doesn't exist"
+        })
+    }
+    res.send({
+        user
+    })
 }

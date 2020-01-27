@@ -6,6 +6,7 @@ import path from 'path'
 import contactRoutes from './routes/contact'
 import usersRoutes from './routes/users'
 import authRoutes from './routes/auth'
+import videoCourseRoutes from './routes/video_courses'
 import mailer from "./config/mailer";
 import dotenv from "dotenv/config";
 import cookieParser from 'cookie-parser'
@@ -32,6 +33,7 @@ app.use("/api/web-stats", webStatsRoutes());
 app.use("/api/contact", contactRoutes())
 app.use("/api/users", usersRoutes())
 app.use("/api/auth", authRoutes())
+app.use("/api/video-courses", videoCourseRoutes())
 
 app.get('*', (req, res) => {
   console.log(path.join(__dirname, '../client/build/index.html'))

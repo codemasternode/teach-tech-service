@@ -13,6 +13,9 @@
             "country": "Polska",
             "street": "ul. Bieżanowska 258B"
         },
-        "isConfirmed": true
+        "isConfirmed": true,
+        "videoCourses": [
+            "Obiekty JS"
+        ]
     }
 ]

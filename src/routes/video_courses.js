@@ -6,7 +6,7 @@ const router = express.Router();
 
 export default () => {
   router.get("/courses", getCourses)
-  router.get("/courses/:course-name", getCourseByName)
-  router.get("/courses/:course-name/:section", verifyToken, getCourseSectionByNumber)
+  router.get("/courses/:courseName", getCourseByName)
+  router.get("/courses/:courseName/:sectionName", verifyToken, getCourseSectionByNumber)
   return router;
 };
