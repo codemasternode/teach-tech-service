@@ -1,9 +1,9 @@
 import React from 'react'
 
-function NotFound(props) {
+function Nav(props) {
     return (
         <div></div>
     )
 }
 
-export default NotFound
+export default Nav

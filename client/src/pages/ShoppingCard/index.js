@@ -1,9 +1,9 @@
 import React from 'react'
 
-function NotFound(props) {
+function ShoppingCard(props) {
     return (
         <div></div>
     )
 }
 
-export default NotFound
+export default ShoppingCard

@@ -86,3 +86,7 @@ export async function getCourses(req, res) {
     const videoCourses = await VideoCourses.find({}, { name: 1, price: 1, description: 1 })
     res.send({ videoCourses })
 }
+
+export async function buyCourse(req,res) {
+    
+}

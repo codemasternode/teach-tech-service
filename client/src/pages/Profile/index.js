@@ -1,8 +1,9 @@
-import React from "react";
-import "./index.scss";
+import React from 'react'
 
-function Profile() {
-  return <h1>Profile</h1>;
+function Profile(props) {
+    return (
+        <div></div>
+    )
 }
 
-export default Profile;
+export default Profile
