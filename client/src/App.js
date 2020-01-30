@@ -23,30 +23,51 @@ const theme = createMuiTheme({
   }
 })
 
+const AuthContext = React.createContext()
+
 
 class App extends React.Component {
+
+  state = {
+    isAuth: false
+  }
+
+  login = () => {
+    this.setState({
+      isAuth: true
+    })
+  }
+
+  logout = () => {
+    this.setState({
+      isAuth: false
+    })
+  }
+
   render() {
     return (
-      <ThemeProvider theme={theme}>
-        <Router>
-          <Nav />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/logowanie" component={Login} />
-            <Route path="/rejestracja" component={Register} />
-            <PrivateRoute path="/kurs/video/:name" component={MP4Player} />
-            <PrivateRoute exact path="/kurs/:name" component={Course} />
-            <PrivateRoute path="/moje-kursy" component={MyVideoCourses} />
-            <PrivateRoute path="/profil" component={Profile} />
-            <PrivateRoute path="/koszyk" component={ShoppingCard} />
-            <Route component={NotFound} />
-          </Switch>
-        </Router>
-      </ThemeProvider>
-
+      <AuthContext.Provider value={{ isAuth: this.state.isAuth, login: this.login, logout: this.logout }}>
+        <ThemeProvider theme={theme}>
+          <Router>
+            <Nav />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/logowanie" component={Login} />
+              <Route exact path="/rejestracja" component={Register} />
+              <PrivateRoute exact path="/kurs/video/:name" component={MP4Player} />
+              <PrivateRoute exact path="/kurs/:name" component={Course} />
+              <PrivateRoute exact path="/moje-kursy" component={MyVideoCourses} />
+              <PrivateRoute exact path="/profil" component={Profile} />
+              <PrivateRoute exact path="/koszyk" component={ShoppingCard} />
+              <Route component={NotFound} />
+            </Switch>
+          </Router>
+        </ThemeProvider>
+      </AuthContext.Provider>
     );
   }
 
 }
 
+export { AuthContext }
 export default App

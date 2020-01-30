@@ -26,14 +26,14 @@ export async function loginAuth(req, res) {
 
     if (!user) {
         return res.status(404).send({
-            msg: "This user doesnt' exists"
+            msg: "Niepoprawny email lub hasło"
         })
     }
 
     user.comparePassword(req.body.password, (err, isMatch) => {
         if (err || isMatch === false) {
             return res.status(400).send({
-                msg: "Incorrect email or password"
+                msg: "Niepoprawny email lub hasło"
             })
         }
         const token = jwt.sign({ email: req.body.email }, process.env.JWT_SECRET, {

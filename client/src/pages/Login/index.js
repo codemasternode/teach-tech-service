@@ -10,6 +10,7 @@ import Axios from 'axios'
 import { API_URL } from '../../utils/urls'
 import { withRouter } from 'react-router-dom'
 import Snackbar from '../../components/Snackbar'
+import { AuthContext } from '../../App'
 
 const styles = theme => ({
     container: {
@@ -60,19 +61,20 @@ function validateEmail(email) {
 class Login extends React.Component {
     state = {
         email: {
-            value: "",
+            value: "marcinwarzybok@outlook.com",
             isError: false,
             helperText: ""
         },
         password: {
-            value: "",
+            value: "Marcinek123",
             isError: false,
             helperText: ""
         },
-        openInfoWindow: false
+        openInfoWindow: false,
+        textInfoWindow: ""
     }
 
-    loginSubmit = () => {
+    loginSubmit = (login) => () => {
         if (this.state.email.value === "") {
             const toCopy = this.state.email
             this.setState({
@@ -118,9 +120,23 @@ class Login extends React.Component {
                 password: this.state.password.value
             }
         }).then((res) => {
+            console.log(res)
+            login()
             this.props.history.push("/moje-kursy")
         }).catch((err) => {
-            
+            console.log(err)
+            this.setState({
+                email: {
+                    ...this.state.email,
+                    isError: true
+                },
+                password: {
+                    ...this.state.password,
+                    isError: true
+                },
+                openInfoWindow: true,
+                textInfoWindow: "Nieprawidłowy adres email lub hasło"
+            })
         })
     }
 
@@ -145,42 +161,49 @@ class Login extends React.Component {
     render() {
         const { classes } = this.props
         return (
-            <div className={classes.container}>
-                <Card className={classes.card} variant="outlined">
-                    <CardContent>
-                        <Typography variant="h5" component="h2" className={classes.headerCenter}>
-                            Logowanie
-                        </Typography>
-                        <div className={classes.form}>
-                            <TextField
-                                label="Email"
-                                placeholder="Adres email"
-                                value={this.state.email.value}
-                                helperText={this.state.email.helperText}
-                                error={this.state.email.isError}
-                                name="email"
-                                onChange={this.changeInput}
-                            />
-                            <TextField
-                                label="Hasło"
-                                placeholder="Hasło"
-                                value={this.state.password.value}
-                                helperText={this.state.password.helperText}
-                                error={this.state.password.isError}
-                                name="password"
-                                onChange={this.changeInput}
-                            />
+            <AuthContext.Consumer>
+                {({ login }) => {
+                    return (
+                        <div className={classes.container}>
+                            <Card className={classes.card} variant="outlined">
+                                <CardContent>
+                                    <Typography variant="h5" component="h2" className={classes.headerCenter}>
+                                        Logowanie
+                                    </Typography>
+                                    <div className={classes.form}>
+                                        <TextField
+                                            label="Email"
+                                            placeholder="Adres email"
+                                            value={this.state.email.value}
+                                            helperText={this.state.email.helperText}
+                                            error={this.state.email.isError}
+                                            name="email"
+                                            onChange={this.changeInput}
+                                        />
+                                        <TextField
+                                            label="Hasło"
+                                            placeholder="Hasło"
+                                            value={this.state.password.value}
+                                            helperText={this.state.password.helperText}
+                                            error={this.state.password.isError}
+                                            name="password"
+                                            onChange={this.changeInput}
+                                        />
+                                    </div>
+                                </CardContent>
+                                <CardActions className={classes.footer}>
+                                    <Button variant="contained" color="secondary" size="small" onClick={this.loginSubmit(login)}>Zaloguj</Button>
+                                    <Button color="primary" size="small" onChange={() => {
+                                        this.props.history.push("/register")
+                                    }}>Zarejestruj</Button>
+                                </CardActions>
+                            </Card>
+                            <Snackbar open={this.state.openInfoWindow} handleOpen={this.handleClose} alertType="error" text={this.state.textInfoWindow} />
                         </div>
-                    </CardContent>
-                    <CardActions className={classes.footer}>
-                        <Button variant="contained" color="secondary" size="small" onClick={this.loginSubmit}>Zaloguj</Button>
-                        <Button color="primary" size="small" onChange={() => {
-                            this.props.history.push("/register")
-                        }}>Zarejestruj</Button>
-                    </CardActions>
-                </Card>
-                <Snackbar open={this.state.openInfoWindow} handleOpen={this.handleClose} alertType="error" />
-            </div>
+                    )
+                }}
+            </AuthContext.Consumer>
+
         )
     }
 }
