@@ -10,7 +10,7 @@ import Axios from 'axios'
 import { API_URL } from '../../utils/urls'
 import { withRouter } from 'react-router-dom'
 import Snackbar from '../../components/Snackbar'
-import { AuthContext } from '../../App'
+import { AuthContext } from '../../components/AuthContext'
 
 const styles = theme => ({
     container: {
@@ -20,7 +20,7 @@ const styles = theme => ({
         height: "80vh"
     },
     card: {
-        width: 500,
+        width: 600,
         marginLeft: "auto",
         marginRight: "auto"
     },
@@ -179,6 +179,7 @@ class Login extends React.Component {
                                             error={this.state.email.isError}
                                             name="email"
                                             onChange={this.changeInput}
+                                            style={{marginRight: 10, marginTop: 20}}
                                         />
                                         <TextField
                                             label="Hasło"
@@ -188,6 +189,7 @@ class Login extends React.Component {
                                             error={this.state.password.isError}
                                             name="password"
                                             onChange={this.changeInput}
+                                            style={{marginRight: 10, marginTop: 20}}
                                         />
                                     </div>
                                 </CardContent>

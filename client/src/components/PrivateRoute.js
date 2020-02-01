@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router-dom';
-import { AuthContext } from '../App'
+import { AuthContext } from '../components/AuthContext'
 
 function PrivateRoute({ component: Component, ...rest }) {
     return (

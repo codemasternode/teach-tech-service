@@ -115,8 +115,14 @@ export async function getMyCourses(req, res) {
         })
     }
 
+    const videoCourses = await VideoCourse.find({
+        name: {
+            $in: user.videoCourses
+        }
+    })
+
     res.send({
-        courses: user.videoCourses
+        videoCourses
     })
 
 }

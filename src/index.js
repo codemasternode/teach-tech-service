@@ -17,7 +17,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, '../client/build')));
 if (process.env.MODE === "DEV") {
   PORT = 5000
-  MONGO_DB_URL = `mongodb://localhost:27017/tts`
+  MONGO_DB_URL = `mongodb://localhost:27017,localhost:27018,localhost:27019/tts`
   app.use(cors({ credentials: true, origin: ['http://localhost:3000', 'http://localhost:5000'] }));
 } else {
   app.use(cors({ credentials: true, origin: ['http://localhost:5000', 'http://localhost:3000'] }));

@@ -11,7 +11,8 @@ export default URI => {
     poolSize: 4,
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true
+    useCreateIndex: true,
+    replicaSet: "rs0"
   };
   mongoose.promise = global.promise
   mongoose.connect(URI, dbOptions, async err => {

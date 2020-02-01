@@ -15,6 +15,7 @@ import ShoppingCard from './pages/ShoppingCard'
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import { blue, red } from '@material-ui/core/colors'
+import {AuthContext} from './components/AuthContext'
 
 const theme = createMuiTheme({
   palette: {
@@ -22,8 +23,6 @@ const theme = createMuiTheme({
     secondary: red
   }
 })
-
-const AuthContext = React.createContext()
 
 
 class App extends React.Component {
@@ -69,5 +68,4 @@ class App extends React.Component {
 
 }
 
-export { AuthContext }
 export default App

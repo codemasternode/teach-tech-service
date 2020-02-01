@@ -1,12 +1,14 @@
 import VideoCourses from '../models/video_courses'
 import User from '../models/users'
-import {getSignedURL} from '../services/getAccessToPrivateContent'
+import { getSignedURL } from '../services/getAccessToPrivateContent'
 
 //get course (public)
 export async function getCourseByName(req, res) {
-    console.log(req.params.courseName)
     const course = await VideoCourses.findOne({
-        name: req.params.courseName
+        name: {
+            $regex: req.params.courseName,
+            $options: "i"
+        }
     })
 
     if (!course) {
@@ -52,7 +54,7 @@ export async function getCourseSectionByNumber(req, res) {
             msg: "Course doesn't exist"
         })
     }
-    
+
     let section = null
     for (let i = 0; i < course.sections.length; i++) {
         if (course.sections[i].name === req.params.sectionName) {
@@ -66,19 +68,19 @@ export async function getCourseSectionByNumber(req, res) {
         })
     }
     const promises = []
-    for(let k = 0; k < section.videoSources.length; k++) {
+    for (let k = 0; k < section.videoSources.length; k++) {
         promises.push(getSignedURL(section.videoSources[k].source))
     }
-    
+
     Promise.all(promises).then(signedUrls => {
-       
-        for(let i = 0; i < signedUrls.length; i++) {
+
+        for (let i = 0; i < signedUrls.length; i++) {
             section.videoSources[i].source = signedUrls[i]
         }
 
         res.send({ section })
     })
-    
+
 }
 
 //get courses (public)
@@ -87,6 +89,6 @@ export async function getCourses(req, res) {
     res.send({ videoCourses })
 }
 
-export async function buyCourse(req,res) {
-    
+export async function buyCourse(req, res) {
+
 }

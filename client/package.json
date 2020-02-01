@@ -21,6 +21,7 @@
     "react-material-ui-form-validator": "^2.0.10",
     "react-numeric-input": "^2.2.3",
     "react-phone-input-mui": "^2.9.4",
+    "react-player": "^1.15.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.0.1",
     "styled-components": "^4.4.1"

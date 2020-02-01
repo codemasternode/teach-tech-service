@@ -1,8 +1,12 @@
 [
     {
-        "name": "Obiekty JS",
-        "description": "abc",
+        "name": "Kurs Obiekty JS",
+        "subname": "Kurs nauczy Cię jak posługiwać się obiektami w JavaScript",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis ligula id mattis ultricies. Nulla quis elit eu tortor malesuada tempor nec sit amet tortor.",
         "price": 34.99,
+        "author": "Marcin Warzybok",
+        "thumbnail": "/thumbnail.jpg",
+        "welcomeVideo": "https://d29hflr1zrkdyp.cloudfront.net/welcome.mp4",
         "sections": [
             {
                 "name": "Tworzenie obiektów",
@@ -398,6 +402,19 @@
                     }
                 ]
             }
+        ],
+        "numberOfVideoHours": 3,
+        "numberOfExercises": 50,
+        "numberOfHoursWork": 26,
+        "knowledgeList": [
+            "Easily identify why your customer is going to buy.",
+            "Professionally deal with decision makers from purchasing right up to the CEO",
+            "Control the sales process from beginning to end to maximise your results.",
+            "Master closing techniques that allow the customer to buy from you rather than you have to 'close' the deal (SO much easier!)"
+        ],
+        "requirements": [
+            "HTML5",
+            "Basic JS"
         ]
     }
 ]
