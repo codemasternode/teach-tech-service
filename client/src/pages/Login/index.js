@@ -188,6 +188,7 @@ class Login extends React.Component {
                                             helperText={this.state.password.helperText}
                                             error={this.state.password.isError}
                                             name="password"
+                                            type="password"
                                             onChange={this.changeInput}
                                             style={{marginRight: 10, marginTop: 20}}
                                         />

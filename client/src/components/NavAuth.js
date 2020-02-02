@@ -14,6 +14,8 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import ShoppingCardIcon from '@material-ui/icons/ShoppingCart'
+import {withRouter} from 'react-router-dom'
 
 const useStyles = makeStyles(theme => ({
     grow: {
@@ -77,7 +79,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function PrimarySearchAppBar() {
+function PrimarySearchAppBar(props) {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -197,9 +199,21 @@ export default function PrimarySearchAppBar() {
                             aria-label="account of current user"
                             aria-controls={menuId}
                             aria-haspopup="true"
-                            onClick={handleProfileMenuOpen}
+                            onClick={() => {
+                                props.history.push("/koszyk")
+                            }}
                             color="inherit"
                         >
+                            <ShoppingCardIcon />
+                        </IconButton>
+                        <IconButton
+                            edge="end"
+                            aria-label="account of current user"
+                            aria-controls={menuId}
+                            aria-haspopup="true"
+                            onClick={handleProfileMenuOpen}
+                            color="inherit"
+                        > 
                             <AccountCircle />
                         </IconButton>
                     </div>
@@ -221,3 +235,5 @@ export default function PrimarySearchAppBar() {
         </div>
     );
 }
+
+export default withRouter(PrimarySearchAppBar)

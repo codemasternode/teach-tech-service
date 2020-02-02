@@ -4,7 +4,7 @@ import { getSignedURL } from '../services/getAccessToPrivateContent'
 
 //get course (public)
 export async function getCourseByName(req, res) {
-    const course = await VideoCourses.findOne({
+    let course = await VideoCourses.findOne({
         name: {
             $regex: req.params.courseName,
             $options: "i"
@@ -17,11 +17,21 @@ export async function getCourseByName(req, res) {
         })
     }
 
-    for (let i = 0; i < course.sections.length; i++) {
-        course.sections[i].videoSources = undefined
-        course.sections[i].exercises = undefined
+    let copyOfCourse = JSON.parse(JSON.stringify(course))
+    for (let i = 0; i < copyOfCourse.sections.length; i++) {
+        for(let k = 0; k < copyOfCourse.sections[i].videoSources.length; k++) {
+            copyOfCourse.sections[i].videoSources[k].source = undefined
+        }
+        const numberOfExercises = copyOfCourse.sections[i].exercises.length
+        copyOfCourse.sections[i].exercises = undefined
+        
+        copyOfCourse.sections[i] = {
+            ...copyOfCourse.sections[i],
+            numberOfExercises
+        }
+        
     }
-    res.send({ course })
+    res.send({ course: copyOfCourse })
 }
 
 //get course section (private)
